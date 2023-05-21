@@ -1,0 +1,15 @@
+The project allows users to create, update, and delete contacts. The system uses a CSV file to store contact information.
+
+The following is a brief description of each function in the code:
+
+client_input(): This function prompts the user to select an action. The user can choose to create, update, or delete a contact.
+Create_Contact(): This function creates a new contact. The user is prompted to enter the contact's name, email address, phone number, and address.
+Update_Contact(): This function updates an existing contact. The user is prompted to enter the contact's email address and the field they want to update. The user can update the contact's name, email address, phone number, or address.
+Delete_Contact(): This function deletes an existing contact. The user is prompted to enter the contact's email address.
+save_inputs(): This function saves the contact information to a CSV file.
+update(): This function prompts the user to select the field they want to update. The user can update the contact's name, email address, phone number, or address.
+emailFound(): This function checks if the specified email address exists in the CSV file.
+phoneNumberValidator(): This function validates a phone number.
+emailValidator(): This function validates an email address.
+The system is designed to be easy to use and to provide a basic level of contact management functionality.
+
