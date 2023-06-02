@@ -1,0 +1,2 @@
+Create ec2 and install nnginx on it.
+Required: screenshot From accessing the machine public ip from the browser
