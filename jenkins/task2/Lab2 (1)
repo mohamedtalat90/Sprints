@@ -1,0 +1,53 @@
+1) What is Jenkins pipeline?
+
+Jenkins pipeline is a suite of plugins that allow you to define and manage the entire software delivery pipeline as code. It provides a way to create, manage, and visualize continuous integration and continuous delivery (CI/CD) pipelines within Jenkins. With Jenkins pipeline, you can define your build, test, and deployment processes in a Jenkinsfile, which is a text file written in a domain-specific language (DSL) designed for pipeline definition.
+
+
+
+2) What scripting language is Jenkins pipeline syntax based on?
+
+Jenkins pipeline syntax is based on the Groovy programming language. Groovy is a dynamic scripting language for the Java Virtual Machine (JVM) that provides concise and powerful syntax for writing scripts. Jenkins uses Groovy-based DSL to define pipeline stages, steps, and other configuration elements in the Jenkinsfile.
+
+3) what are the different ways to trigger pipeline  ? 
+
+There are several ways to trigger a Jenkins pipeline:
+
+Manual Trigger: You can manually start a pipeline by clicking on the "Build Now" button in the Jenkins web interface.
+
+SCM Trigger: Jenkins can monitor your source code repository (such as Git, Subversion, or Mercurial) and automatically trigger a pipeline when changes are detected in the repository.
+
+Timer Trigger: You can schedule the pipeline to run at specific times using cron-like syntax. For example, you can schedule the pipeline to run every night at 1:00 AM.
+
+Webhook Trigger: Jenkins can receive HTTP POST requests from external systems or services (such as a version control system or a webhook-enabled service) and trigger the pipeline based on the incoming requests.
+
+Upstream/Downstream Trigger: If you have multiple pipelines in Jenkins, you can configure them to trigger each other. When an upstream pipeline is triggered, it can automatically start downstream pipelines that depend on it.
+
+
+ 
+4) what is different between parameter and jenkins env variable?
+
+Parameters and Jenkins environment variables are two different mechanisms for providing dynamic values to a Jenkins pipeline:
+
+Parameters: Parameters allow you to define inputs that users can provide when triggering a pipeline. They are defined in the parameters block of the pipeline and can be configured with default values, descriptions, and other properties. Parameters are useful when you need to pass runtime values to the pipeline, such as target environments, version numbers, or credentials.
+
+Jenkins Environment Variables: Jenkins provides a set of predefined environment variables that you can access within your pipeline. These variables provide information about the build environment, Jenkins configuration, and other context-specific data. Environment variables are accessible through the env object in the pipeline script. They are useful for accessing information like the current build number, Git commit hash, or custom environment variables set by Jenkins or plugins.
+
+
+5) what is organization folder job and what is used for ?
+
+An organization folder job in Jenkins is a special type of job that allows you to manage multiple related pipelines or projects within a specific organization or team. It provides a way to organize and centralize the configuration, permissions, and settings for a group of related projects. An organization folder job is typically used in situations where you have multiple pipelines or projects with similar requirements or dependencies.
+
+By using an organization folder job, you can define a common set of configurations and properties that apply to all the pipelines or projects within the organization. This includes defining shared libraries, environment variables, security settings, and access controls. It helps in maintaining consistency, reducing duplication, and improving manageability across the projects within an organization.
+
+
+6) Create jenkins pipeline for your repo and use script file (jenkinsfile) to write pipeline syntax, include parameter functions and env variable in it ? 
+ 
+7) Create another multibranch pipeline and filter branches to contain only (master , dev , test ) ? 
+
+
+
+
+
+
+
+
